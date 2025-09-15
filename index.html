@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZLABO | 회사 소개</title>
+  <meta name="description" content="ZLABO는 원모아 가계부 등 일상에 유용한 앱을 만드는 스튜디오입니다.">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{--violet:#635BFF;--yellow:#FFD66B;--ink:#1f2937;--bg:#F7F8FA}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink)}
+    header{padding:48px 20px;text-align:center;background:white;border-bottom:1px solid #eceff3}
+    .logo{font-weight:800;font-size:28px;letter-spacing:0.4px}
+    .logo b{color:var(--violet)}
+    .tag{display:inline-block;margin-top:8px;padding:4px 10px;border-radius:999px;background:var(--yellow);font-size:12px}
+    main{max-width:920px;margin:0 auto;padding:32px 20px;display:grid;gap:20px}
+    section{background:white;border:1px solid #eceff3;border-radius:16px;padding:20px}
+    h2{margin:0 0 8px 0;font-size:18px}
+    p{margin:8px 0;line-height:1.6}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;background:#fafafa;border:1px dashed #e5e7eb;padding:8px 10px;border-radius:8px}
+    footer{max-width:920px;margin:16px auto 40px;padding:0 20px;color:#6b7280;font-size:12px}
+    @media (max-width: 720px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Z<b>LABO</b></div>
+    <div class="tag">원모아 가계부 · 모바일 앱 스튜디오</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>회사 소개</h2>
+      <p>ZLABO는 가족과 일상 재무관리를 더 쉽게 만드는 앱을 개발합니다. 대표 앱 <b>원모아 가계부</b>를 비롯해, 간단하고 직관적인 사용자 경험을 지향합니다.</p>
+    </section>
+
+    <section class="grid">
+      <div>
+        <h2>법인 정보</h2>
+        <p><b>법인명</b> : ZLABO Inc. (예시)</p>
+        <p><b>대표자</b> : 신철원</p>
+        <p><b>D‑U‑N‑S</b> : 123456789 (예시)</p>
+        <p><b>사업자등록번호</b> : 000-00-00000 (예시)</p>
+      </div>
+      <div>
+        <h2>연락처</h2>
+        <p><b>이메일</b> : contact@zlabo.co.kr</p>
+        <p><b>주소</b> : (예시) 서울특별시 …</p>
+        <p><b>고객 지원 시간</b> : 평일 10:00–17:00 (KST)</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>영문 소개 (English)</h2>
+      <p>ZLABO is a small studio building delightful mobile apps for everyday finance. Our flagship app is <b>Wonmore Money Book</b>. This website verifies our company domain and contact.</p>
+    </section>
+
+    <section>
+      <h2>법적 고지</h2>
+      <p>본 웹사이트는 Apple Developer Program 조직 멤버십 전환을 위한 회사 도메인 및 실체 확인 목적을 겸합니다.</p>
+    </section>
+
+    <section>
+      <h2>문의</h2>
+      <p>아래 이메일로 연락 주시면 빠르게 답변드리겠습니다.</p>
+      <p class="mono">contact@zlabo.co.kr</p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> ZLABO. All rights reserved.
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
